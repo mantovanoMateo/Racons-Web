@@ -22,13 +22,13 @@ h1{
     font-weight: bold;
 }
 
-p{
+h3{
     color: white;
     max-width: 600px;
     margin-bottom: 2px;
     text-align: left;
 
-    font-size: 16px;
+    font-size: 18px;
 
     text-shadow: 1px 0px 10px rgb(45, 45, 45);
     font-weight: 400;
