@@ -5,6 +5,7 @@
     background-color: rgb(40, 40, 40);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navMenu{
@@ -76,10 +77,9 @@ h2:hover{
 }
 
 .logo{
-    margin-top: auto;
     margin-left: 20px;
     max-width: 140px;
-    height:fit-content;
+    max-height: 70px;
 }
 
 
