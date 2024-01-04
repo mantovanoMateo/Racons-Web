@@ -78,7 +78,7 @@ h2:hover{
 .logo{
     margin-top: auto;
     margin-left: 20px;
-    width: 140px;
+    max-width: 140px;
     height:fit-content;
 }
 
