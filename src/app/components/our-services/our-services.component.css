@@ -1,0 +1,88 @@
+.pgHeader{
+    background-color: grey;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+
+    text-align: center;
+    padding: 11%;
+    min-height: 100px;
+    max-height: 400px;
+
+    background-image: url(RACONS\ PREPARACION\ DE\ SUELO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 0px 10px rgb(45, 45, 45);
+}
+
+.service{
+    width: 400px;
+    height: 400px;
+    margin: 40px;
+}
+
+.servicesContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-weight: 450;
+    margin: 20px;
+    text-align: center;
+
+}
+
+img{
+    height: 350px;
+    width: 350px;
+
+    border: none;
+    border-radius: none;
+
+    background-color: black;
+    box-shadow: 1px 0px 5px rgb(45, 45, 45);
+
+    display: block;
+}
+
+.imgDescript{
+    width: 350px;
+    height: 350px;
+    border-radius: none;
+
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.imgDescript:hover{
+    opacity: 1;
+    cursor: default;
+}
+
+.imgCenter{
+    display: flex;
+    justify-content: center;
+}

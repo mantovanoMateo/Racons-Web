@@ -1,0 +1,73 @@
+.contactForm{
+    padding-top: 90px;
+    width: 500px;
+    max-width: 500px;
+    margin-right: 50px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.logoFb{
+    width: 30px;
+}
+
+.logoFb:hover{
+    cursor: pointer;
+}
+
+.logoIg{
+    width: 44px;
+}
+
+.logoIg:hover{
+    cursor: pointer;
+}
+
+.content{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text{
+    padding-top: 90px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+h1{
+    font-weight: bold;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn{
+    width: 100%;
+}
+
+@media(max-width:900px){
+    .text{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .contactForm{
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+.errorMessage{
+    color: red;
+    font-size: small;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,39 @@
+.homeImg{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+
+    padding: 11%;
+    height: 100vh;
+
+    background-image: url(RACONS\ home\ photo\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: white;
+    font-size: 5vw;
+    max-width: 600px;
+
+    text-shadow: 1px 0px 10px rgb(45, 45, 45);
+    font-weight: bold;
+}
+
+p{
+    color: white;
+    max-width: 600px;
+    margin-bottom: 2px;
+    text-align: left;
+
+    font-size: 16px;
+
+    text-shadow: 1px 0px 10px rgb(45, 45, 45);
+    font-weight: 400;
+}
+
+.btn{
+    margin-top: 10px;
+}

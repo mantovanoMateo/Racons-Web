@@ -1,0 +1,68 @@
+.pgHeader{
+    background-color: grey;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+
+    text-align: center;
+    padding: 11%;
+    min-height: 100px;
+    max-height: 400px;
+
+    background-image: url(RACONS\ HOME\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 0px 10px rgb(45, 45, 45);
+}
+
+h2{
+    font-size: 27px;
+    font-weight: bold;
+
+    margin-top: 30px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.bathImage{
+    width: 200px;
+    height: 300px;
+    background-color: grey;
+}
+
+.houseImg{
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+}
+
+.kitchenImage{
+    width: 300px;
+    height: 300px;
+}
+
+img{
+    margin: 5px;
+    box-shadow: 1px 0px 5px rgb(45, 45, 45);
+}

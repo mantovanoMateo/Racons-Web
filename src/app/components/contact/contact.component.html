@@ -1,0 +1,62 @@
+<div class="content">
+    <div class="text">
+        <h1>CONTACTANOS</h1>
+        <p>Telefono: 2235994121</p>
+        <p>Mail: nicolasramirez.96.constru&#64;gmail.com</p>
+        <a
+            href="https://www.facebook.com/p/Racons-Constructora-100083324741451/?paipv=0&eav=AfYd6RQn_7nsUS9-yReNMhbcvyTYPyxffQZVzRlc4ZOwHwSKh9EzIIdlgd94HhYKvTA&_rdr"><img
+                class="logoFb" src="../assets/facebook_black_logo_icon_147136.png" alt=""></a>
+        <a href="https://www.instagram.com/raconsconstructora?igsh=ZDVyM280dGU4azdx"><img class="logoIg"
+                src="../assets/instagram logo negro.png" alt=""></a>
+    </div>
+    <div class="contactForm">
+        <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" formControlName="name">
+            </div>
+            @if (contactForm.get('name')?.hasError('required') && (contactForm.get('name')?.touched || contactForm.get('name')?.dirty)) {
+                <div class="errorMessage">
+                    Debes introducir tu nombre
+                </div>
+            }
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Telefono" formControlName="phone">
+            </div>
+            @if (contactForm.get('phone')?.hasError('required') && (contactForm.get('phone')?.touched || contactForm.get('phone')?.dirty)) {
+                <div class="errorMessage">
+                    Debes introducir un telefono
+                </div>
+            }
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" formControlName="email">
+            </div>
+            @if (contactForm.get('email')?.hasError('required') && (contactForm.get('email')?.touched || contactForm.get('email')?.dirty)) {
+                <div class="errorMessage">
+                    Debes introducir un email
+                </div>
+            }
+            @if(contactForm.get('email')?.hasError('email') && (contactForm.get('email')?.touched || contactForm.get('email')?.dirty)){
+                <div class="errorMessage">
+                    Debes introducir un email valido
+                </div>
+            }
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Ingrese su mensaje"
+                    rows="3" formControlName="body" ></textarea>
+            </div>
+            @if (contactForm.get('body')?.hasError('required') && (contactForm.get('body')?.touched || contactForm.get('body')?.dirty)) {
+                <div class="errorMessage">
+                    Si quieres contactarnos debes ingresar un mensaje o comuniquese directamente a nuestro telefono
+                </div>
+            }
+            @if(!contactForm.valid){
+                <p>Debes completar el formulario para poder enviar un mensaje</p>
+            }
+            <button [disabled]="!contactForm.valid" type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+    </div>
+</div>
