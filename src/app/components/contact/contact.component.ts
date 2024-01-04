@@ -23,6 +23,6 @@ export class ContactComponent {
     let email=this.contactForm.get('email')?.value!;
     let body=this.contactForm.get('body')?.value!;
 
-    window.location.href=`mailto:mantovanomateo@gmail.com?subject=ConsultaDesdeFormulario&body=nombre%3A%20${name}%0Atelefono%3A%20${phone}%0Aemail%3A%20${email}%0Amensaje%3A%20${body}`
+    window.location.href=`mailto:nicolasramirez.96.constru@gmail.com?subject=ConsultaDesdeFormulario&body=nombre%3A%20${name}%0Atelefono%3A%20${phone}%0Aemail%3A%20${email}%0Amensaje%3A%20${body}`
   }
 }
